@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+find_package( OpenCV )
+include_directories( ${OpenCV_INCLUDE_DIRS} )
+add_executable( hw4-1 hw4-1.cpp )
+target_link_libraries( hw4-1 ${OpenCV_LIBS} )
