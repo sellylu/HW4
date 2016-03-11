@@ -44,7 +44,7 @@ int main(int argc, char* argv[]) {
 	for(int i = 0; i < dst.rows; i++) {
 		pic_ptr = dst.ptr(i);
 		for(int j = 0; j < dst.cols; j++) {
-			*pic_ptr++ = pic_ptr[0] > 127? 255:0;
+			*pic_ptr++ = pic_ptr[0] > 127? 0:255;
 		}
 	}
 	
